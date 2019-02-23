@@ -1,0 +1,48 @@
+@import 'src/assets/styles/_colors.scss';
+
+.product {
+  display: flex;
+  width: 300px;
+  padding: 16px 32px;
+  flex-direction: column;
+
+  &__brand {
+    font-size: 18px;
+    color: black;
+    font-weight: 900;
+  }
+
+  &__name {
+    font-size: 16px;
+    color: $dark-gray;
+  }
+
+  &__seller {
+    font-size: 14px;
+    color: $dark-gray;
+
+    & a {
+      color: $brand-green;
+      text-decoration: none;
+      font-weight: 900;
+    }
+  }
+
+  &__share-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: $dark-gray;
+    margin: 16px 0;
+
+    & i {
+      cursor: pointer;
+    }
+
+    & i:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
