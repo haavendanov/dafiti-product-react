@@ -1,0 +1,1 @@
+Ejecutar yarn install && yarn start para ejecutar el proyecto

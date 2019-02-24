@@ -6,25 +6,46 @@
   padding: 16px 32px;
   flex-direction: column;
 
-  &__brand {
-    font-size: 18px;
-    color: black;
-    font-weight: 900;
-  }
+  &__information {
+    display: grid;
+    grid-template-columns: 80% 20%;
 
-  &__name {
-    font-size: 16px;
-    color: $dark-gray;
-  }
-
-  &__seller {
-    font-size: 14px;
-    color: $dark-gray;
-
-    & a {
-      color: $brand-green;
-      text-decoration: none;
+    &__brand {
+      display: block;
+      font-size: 18px;
+      color: black;
       font-weight: 900;
+    }
+  
+    &__name {
+      display: block;
+      font-size: 16px;
+      color: $dark-gray;
+    }
+  
+    &__seller {
+      display: block;
+      font-size: 14px;
+      color: $dark-gray;
+  
+      & a {
+        color: $brand-green;
+        text-decoration: none;
+        font-weight: 900;
+      }
+    }
+
+    & i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      color: $dark-gray;
+      cursor: pointer;
+    }
+
+    & i:hover {
+      opacity: 0.9;
     }
   }
 
